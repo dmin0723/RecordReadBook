@@ -20,6 +20,7 @@ public class BookListAdapter extends SimpleCursorAdapter {
     private TextView progressTextView;
     private ProgressBar mProgressBar;
 
+
     public BookListAdapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
         super(context, layout, c, from, to, flags);
         mInflater = LayoutInflater.from(context);
