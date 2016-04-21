@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 这里的id与MainActivity中的search布局id是一样的，看是否有冲突? -->
+
+    <RelativeLayout
+        android:id="@+id/search_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/actionbar">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corners">
+
+            <ImageView
+                android:id="@+id/search_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/search_black" />
+
+            <EditText
+                android:id="@+id/search_content_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/search_icon_image_view"
+                android:background="@null"
+                android:hint="请输入书名"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_alignParentRight="true"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="@string/search"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/search_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+
+    </RelativeLayout>
+</LinearLayout>
