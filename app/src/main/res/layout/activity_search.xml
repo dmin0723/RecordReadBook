@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-                android:src="@drawable/search_black" />
+                android:src="@drawable/search_black"/>
 
             <EditText
                 android:id="@+id/search_content_edit_text"
@@ -38,13 +38,13 @@
                 android:layout_toRightOf="@+id/search_icon_image_view"
                 android:background="@null"
                 android:hint="请输入书名"
-                android:singleLine="true" />
+                android:singleLine="true"/>
 
             <Button
                 android:id="@+id/search_button"
-                android:layout_alignParentRight="true"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
                 android:text="@string/search"/>
         </RelativeLayout>
 

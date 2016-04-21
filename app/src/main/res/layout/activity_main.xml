@@ -10,8 +10,8 @@
         android:id="@+id/main_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:layout_above="@+id/main_button" />
+        android:layout_above="@+id/main_button"
+        android:scaleType="centerCrop"/>
 
     <LinearLayout
         android:id="@+id/main_button"
@@ -36,20 +36,20 @@
                 android:layout_marginBottom="30dp"
                 android:text="@string/view"
                 android:textColor="@color/gray"
-                android:textSize="18sp" />
+                android:textSize="18sp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/view_black" />
+                android:src="@drawable/view_black"/>
         </RelativeLayout>
 
         <ImageView
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:src="@color/gray" />
+            android:src="@color/gray"/>
 
         <!-- 这里的id与SearchActivity中的search布局id是一样的，看是否有冲突? -->
 
@@ -68,7 +68,7 @@
                 android:layout_marginBottom="30dp"
                 android:text="@string/search"
                 android:textColor="@color/gray"
-                android:textSize="18sp" />
+                android:textSize="18sp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
